@@ -1,15 +1,16 @@
 # Telegram bot
-aiogram==3.0.0b7
+aiogram @ git+https://github.com/aiogram/aiogram.git@master#egg=aiogram
 
 # Работа с SQLite (для баланса, рефералов и ежедневных бонусов)
 aiosqlite==0.22.1
 
-# Асинхронные файлы (если нужен лог или кеш)
+# Асинхронные файлы (лог/кеш)
 aiofiles==23.1.0
 
-# Поддержка HTTP-запросов для aiogram
-aiohttp==3.8.5
+# HTTP клиент (совместим с Python 3.13)
+aiohttp==4.1.0
 
-# Валидаторы, типизация
+# Валидация данных
 pydantic==1.10.26
 typing-extensions==4.5.0
+
